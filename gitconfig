@@ -7,8 +7,8 @@
 [web]
 	browser = open
 [user]
-	name = Jay Vana
-	email = jsvana@mtu.edu
+	name = Scott Ringwelski
+	email = sgringwe@mtu.edu
 [branch]
 	autosetuprebase = always
 [push]
