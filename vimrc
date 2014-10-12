@@ -71,7 +71,7 @@ if filereadable(expand($DOTFILES . "/vimrc.bundles"))
 endif
 
 " tmuxinator is cool
-source ~/.bin/tmuxinator.zsh
+" source ~/.bin/tmuxinator.zsh
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
