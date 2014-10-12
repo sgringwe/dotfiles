@@ -70,6 +70,9 @@ if filereadable(expand($DOTFILES . "/vimrc.bundles"))
   source $DOTFILES/vimrc.bundles
 endif
 
+" tmuxinator is cool
+source ~/.bin/tmuxinator.zsh
+
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
@@ -162,7 +165,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufWritePre * :%s/\n\{3,}/\r\r/e
 
 " More than a now-arbitrary limit is bad, you know.
-set colorcolumn=81
+"set colorcolumn=81
 
 " Show whitespace
 set listchars=tab:▸\ ,eol:¬

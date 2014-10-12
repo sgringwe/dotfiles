@@ -12,6 +12,12 @@ alias vi="vim"
 alias vrc="vim $DOTFILES/vimrc"
 
 alias gp="git pull --rebase"
+alias alldone="git checkout master && git fetch origin -p && git pull"
+
+alias stagingconsole="heroku run rails c -a handshake-staging"
+alias democonsole="heroku run rails c -a handshake-demo"
+alias productionconsole="heroku run rails c -a handshake-production"
+
 alias stt="subl ."
 alias m="mutt"
 alias nb="newsbeuter"
@@ -31,3 +37,7 @@ alias vdown="vagrant halt"
 alias vp="vagrant provision"
 
 alias vinstall="vim +BundleInstall +qall"
+
+alias c="cd ~/code/handshake"
+alias fs="foreman start"
+alias beg="bundle exec guard"

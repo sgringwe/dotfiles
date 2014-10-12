@@ -8,7 +8,7 @@ fi
 
 alias vi="vim"
 
-alias gp="git pull --rebase"
+# alias gp="git pull --rebase" # not all that great, it's nice to see diffs
 alias stt="subl ."
 alias m="mutt"
 alias nb="newsbeuter"
