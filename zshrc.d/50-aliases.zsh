@@ -41,3 +41,10 @@ alias vinstall="vim +BundleInstall +qall"
 alias c="cd ~/code/handshake"
 alias fs="foreman start"
 alias beg="bundle exec guard"
+
+alias gs="git status"
+alias gd="git diff"
+alias gcam="git cam" # see gitconfig
+alias gfrm="git checkout master && git fetch && git rebase origin/master"
+alias gbrd="git branch --merged master | grep -v master | grep -v stable | xargs git branch -d"
+alias gclean="gfrm; gbrd; git gc"
