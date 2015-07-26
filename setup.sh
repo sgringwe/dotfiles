@@ -1,7 +1,5 @@
 #!/bin/bash
-mkdir ~/go
-
-mkdir ~/Projects
+mkdir ~/code
 
 bin_link show-hidden
 bin_link hide-hidden
