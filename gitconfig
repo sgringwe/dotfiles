@@ -34,3 +34,5 @@
 	diff = diff --check
 	root = rev-parse --show-toplevel
 	yolo = !git commit -am \"`curl -s http://whatthecommit.com/index.txt`\"
+[credential]
+	helper = osxkeychain

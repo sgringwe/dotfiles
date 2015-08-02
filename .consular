@@ -1,0 +1,3 @@
+require 'consular/iterm'
+
+# the rest of the file

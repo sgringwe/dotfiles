@@ -32,6 +32,14 @@ config_link wgetrc
 config_link zlogin
 config_link zshrc
 
+# Set up consular and add handshake term project
+# cp lib/default.term ~/.config/consular/
+# https://engineering.fundingcircle.com/blog/2015/02/23/how-to-set-up-a-service-oriented-architecture-for-development/
+cp consular/handshake.term ~/.config/consular/
+
+# Move sublimetext/Preferences.sublime-settings to sublime text settings path
+cp sublimetext/Preferences.sublime-settings ~/Library/Application Support/Sublime Text 3/Packages/User/
+
 if [[ `uname -s` == "Linux" && -e /etc/arch-release ]]
 then
 	config_link Xdefaults

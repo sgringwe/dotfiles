@@ -1,0 +1,33 @@
+tab 'git' do
+  run 'cd ~/code/handshake'
+end
+
+tab 'heroku' do
+  run 'cd ~/code/handshake'
+  run 'RACK_ENV=development rackup -p 4000'
+end
+
+tab 'server' do
+  run 'cd ~/code/handshake'
+  run 'foreman start'
+end
+
+tab 'console' do
+  run 'cd ~/code/handshake'
+  run 'rails c'
+end
+
+tab 'guard' do
+  run 'cd ~/code/handshake'
+  run 'bundle exec guard'
+end
+
+tab 'handshake office' do
+  run 'cd ~/code/handshake-office'
+  run 'foreman start'
+end
+
+tab 'handshake parser' do
+  run 'cd ~/code/handshake-parser'
+  run 'foreman start'
+end
