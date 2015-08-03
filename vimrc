@@ -73,24 +73,25 @@ endif
 " tmuxinator is cool
 " source ~/.bin/tmuxinator.zsh
 
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+" not enabled since it's not installed
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
+" au Syntax * RainbowParenthesesLoadBraces
 
 " Dat color scheme
 set background=dark
-colorscheme solarized
+" colorscheme solarized # not enabled since it isn't installed
 highlight ColorColumn ctermbg=7
 highlight ColorColumn guibg=Gray
 
-" For indent-guides
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_start_level = 1
-let g:indent_guides_guide_size = 1
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
-autocmd VimEnter * :IndentGuidesEnable
+" For indent-guides. Commented out since not enabled.
+" let g:indent_guides_auto_colors = 0
+" let g:indent_guides_start_level = 1
+" let g:indent_guides_guide_size = 1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
+" autocmd VimEnter * :IndentGuidesEnable
 
 " Easy block movement
 nmap <S-k> <S-{>
