@@ -11,7 +11,7 @@ if [[ -z "$agent_pid" ]]; then
     # if you have a passphrase on your key file you may or may
     # not want to add it when logging in, so comment this out
     # if asking for the passphrase annoys you
-    ssh-add
+    # ssh-add
 
 # If the agent is running (pid is non zero)
 else
