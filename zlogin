@@ -1,11 +1,8 @@
 # Check to see if SSH Agent is already running
 agent_pid="$(ps -ef | grep "ssh-agent" | grep -v "grep" | awk '{print($2)}')"
 
-echo "Agent pid $agent_pid"
-
 # If the agent is not running (pid is zero length string)
 if [[ -z "$agent_pid" ]]; then
-    echo "in if"
     # Start up SSH Agent
 
     # this seems to be the proper method as opposed to `exec ssh-agent bash`
@@ -18,7 +15,6 @@ if [[ -z "$agent_pid" ]]; then
 
 # If the agent is running (pid is non zero)
 else
-    echo "in else"
     # Connect to the currently running ssh-agent
 
     # this doesn't work because for some reason the ppid is 1 both when
