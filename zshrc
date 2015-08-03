@@ -6,4 +6,5 @@ find $DOTFILES/zshrc.d -name '*\.zsh' | sort | while read f; do
 done
 
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 eval "$(rbenv init - --no-rehash zsh)"
