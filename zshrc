@@ -8,3 +8,15 @@ done
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 eval "$(rbenv init - --no-rehash zsh)"
+
+export NVM_DIR="/Users/stallion/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# gpg-agent configuration for automatic commit signing using the agent
+[ -f ~/.gpg-agent-info ] && source ~/.gpg-agent-info
+if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+  export GPG_AGENT_INFO
+  export GPG_TTY=$(tty)
+else
+  eval $( gpg-agent --daemon --write-env-file ~/.gpg-agent-info )
+fi

@@ -80,8 +80,8 @@ endif
 " au Syntax * RainbowParenthesesLoadBraces
 
 " Dat color scheme
-set background=dark
-" colorscheme solarized # not enabled since it isn't installed
+set background=light
+" colorscheme solarized
 highlight ColorColumn ctermbg=7
 highlight ColorColumn guibg=Gray
 
@@ -109,9 +109,12 @@ vmap <S--> <c-w><S-->
 """""""""""
 
 " Set leader
-let mapleader = "-"
-let mapleader = "\<Space>"
+let mapleader = ","
+" let mapleader = "\<Space>"
 let maplocalleader = "\\"
+
+" Quick access to CtrlP
+nnoremap <leader>f :CtrlP<CR>
 
 " Easy tab creation
 nmap <Leader>t :tabnew<CR>
@@ -132,9 +135,6 @@ nnoremap <silent> <Leader>= :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " Yay emmet
 nmap <TAB> <c-y>,
-
-" Easy .c(pp)/.h switching
-nmap <leader>a :A<CR>
 
 " Toggle hlsearch
 let hlstate=0

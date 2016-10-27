@@ -40,11 +40,17 @@ alias vinstall="vim +BundleInstall +qall"
 
 alias c="cd ~/code/handshake"
 alias fs="foreman start"
+alias fsd="foreman start -f Procfile.dev"
 alias beg="bundle exec guard"
+alias ber="bundle exec rspec"
 
-alias gs="git status"
+alias gst="git status"
 alias gd="git diff"
-alias gcam="git cam" # see gitconfig
+alias gcam="git commit -a -S -m" # -S signs the commit using keychain
 alias gfrm="git checkout master && git fetch && git rebase origin/master"
 alias gbrd="git branch --merged master | grep -v master | grep -v stable | xargs git branch -d"
 alias gclean="gfrm; gbrd; git gc"
+# alias zf="bundle exec zenflow"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gpu="git push -u"
