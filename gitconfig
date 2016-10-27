@@ -9,7 +9,6 @@
 [user]
 	name = Scott Ringwelski
 	email = sgringwe@mtu.edu
-	signingkey = F49A2F77
 [branch]
 	autosetuprebase = always
 [push]
@@ -39,8 +38,6 @@
 	helper = osxkeychain
 [github]
 	user = sgringwe
-[zenflow]
-token=ed0e6a3094cb4a2e5b0a559cbb2db8ff9fc6fea3
 [commit]
 	gpgsign = true
 [diff]
