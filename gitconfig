@@ -12,7 +12,7 @@
 [branch]
 	autosetuprebase = always
 [push]
-	default = simple
+	default = current
 [alias]
 	st = status
 	c = commit
