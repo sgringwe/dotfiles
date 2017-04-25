@@ -1,4 +1,5 @@
 # Dotfiles management
+# NOTE(sgringwe): This doesn't seem to be a valid formulae anymore?
 tap thoughtbot/formulae
 install rcm
 
