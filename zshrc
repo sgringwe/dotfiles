@@ -10,6 +10,8 @@ export PATH="$HOME/bin:$PATH"
 
 # AWS CLI
 export PATH="$HOME/Library/Python/3.6/bin:$PATH"
+export PATH=~/.local/bin:$PATH
+
 eval "$(rbenv init - --no-rehash zsh)"
 
 export NVM_DIR="/Users/stallion/.nvm"
