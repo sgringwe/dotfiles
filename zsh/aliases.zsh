@@ -7,22 +7,7 @@ then
 fi
 
 alias vi="vim"
-
 # alias gp="git pull --rebase" # not all that great, it's nice to see diffs
-alias stt="subl ."
-alias m="mutt"
-alias nb="newsbeuter"
 alias :wq="exit"
-
-alias django="python manage.py"
-
-alias t="tmuxinator"
-
-alias v="vagrant"
-alias vl="vagrant list"
-alias vssh="vagrant ssh"
-alias vup="vagrant up"
-alias vdown="vagrant halt"
-alias vp="vagrant provision"
 
 alias vinstall="vim +BundleInstall +qall"
