@@ -30,5 +30,8 @@ else
   eval $( gpg-agent --daemon --write-env-file ~/.gpg-agent-info )
 fi
 
+# Add gcloud to the PATH
+export PATH=/Users/stallion/google-cloud-sdk/bin:$PATH
+
 # set up kubectl autocomplete
 source <(kubectl completion zsh) 
