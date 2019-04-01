@@ -35,3 +35,8 @@ export PATH=/Users/stallion/google-cloud-sdk/bin:$PATH
 
 # set up kubectl autocomplete
 source <(kubectl completion zsh) 
+
+# See https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#homebrew 
+# this is needed because qtwebkit is not really maintained / went proprietary and 
+# it is hard to get it running with new ruby and libraries
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
