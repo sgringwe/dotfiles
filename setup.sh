@@ -13,9 +13,6 @@ RCRC=./rcrc rcup
 # Grab all the submodules
 git submodule update --init
 
-# Install some bundles
-vim +BundleInstall +qall
-
 # OSX options setup
 ./osx-setup.sh
 
