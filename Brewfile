@@ -1,5 +1,7 @@
-install rbenv
-install ruby-build
+# Dotfiles management
+tap 'thoughtbot/formulae'
+brew 'rcm'
 
-# Remove outdated versions from the cellar
-cleanup
+# Ruby 
+brew 'rbenv'
+brew 'ruby-build'

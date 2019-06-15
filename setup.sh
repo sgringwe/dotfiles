@@ -1,9 +1,6 @@
 #!/bin/bash
 mkdir ~/code
 
-bin_link show-hidden
-bin_link hide-hidden
-
 # Setup homebrew
 brew bundle
 
