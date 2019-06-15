@@ -8,7 +8,7 @@
 	browser = open
 [user]
 	name = Scott Ringwelski
-	email = sgringwe@mtu.edu
+	email = me@sgringwe.com
 [branch]
 	autosetuprebase = always
 [push]

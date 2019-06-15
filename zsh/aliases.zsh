@@ -10,4 +10,3 @@ alias vi="vim"
 # alias gp="git pull --rebase" # not all that great, it's nice to see diffs
 alias :wq="exit"
 
-alias vinstall="vim +BundleInstall +qall"
