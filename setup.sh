@@ -4,6 +4,9 @@ mkdir ~/code
 # Setup homebrew
 brew bundle
 
+# Setup zsh prompt
+nvm install 8.0 && nvn use 8 && npm install -g spaceship-prompt
+
 # Copy configs
 RCRC=./rcrc rcup
 

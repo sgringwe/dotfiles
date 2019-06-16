@@ -14,24 +14,29 @@ export PATH=~/.local/bin:$PATH
 
 eval "$(rbenv init - --no-rehash zsh)"
 
-export NVM_DIR="/Users/stallion/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # Golang https://golang.org/doc/code.html#GOPATH
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 
 # gpg-agent configuration for automatic commit signing using the agent
-[ -f ~/.gpg-agent-info ] && source ~/.gpg-agent-info
-if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
-  export GPG_AGENT_INFO
-  export GPG_TTY=$(tty)
-else
-  eval $( gpg-agent --daemon --write-env-file ~/.gpg-agent-info )
-fi
+# [ -f ~/.gpg-agent-info ] && source ~/.gpg-agent-info
+# if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+#   export GPG_AGENT_INFO
+#   export GPG_TTY=$(tty)
+# else
+#   eval $( gpg-agent --daemon --write-env-file ~/.gpg-agent-info )
+# fi
 
 # Add gcloud to the PATH
-export PATH=/Users/stallion/google-cloud-sdk/bin:$PATH
+export PATH=/Users/scott/google-cloud-sdk/bin:$PATH
 
 # set up kubectl autocomplete
 source <(kubectl completion zsh) 
+
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
