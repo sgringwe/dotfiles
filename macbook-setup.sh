@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Use this setup script on a macbook
+
 mkdir ~/code
 
 # Setup homebrew
