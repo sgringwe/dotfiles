@@ -1,3 +1,6 @@
+alias ber="bundle exec rspec"
+alias fs="foreman start"
+
 alias gst="git status"
 alias gd="git diff"
 alias gcam="git commit -a -m" # TODO(sgringwe): Add -S signs the commit using keychain
