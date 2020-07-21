@@ -2,3 +2,7 @@ Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_rsa
+
+Host localhost
+ HostName localhost
+ Port 2222
