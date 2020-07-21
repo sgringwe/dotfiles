@@ -40,3 +40,5 @@ alias gpu="git push -u"
 
 alias k="kubectl"
 alias s="seira"
+
+alias devup="ssh -t localhost -p 2222 \"cd ~/handshake ; bash\""
