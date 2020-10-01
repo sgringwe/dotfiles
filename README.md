@@ -11,3 +11,7 @@ supported at this time).
 Clone repository into ~/.dotfiles. Location is important - the script depends on it.
 
 Run `./setup.sh`
+
+Add this to bashrc:
+
+`export PATH="$HOME/.dotfiles/bin:$PATH"`
