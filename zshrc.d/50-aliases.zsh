@@ -27,7 +27,6 @@ alias fsd="foreman start -f Procfile.dev"
 alias beg="bundle exec guard"
 alias ber="bundle exec rspec"
 
-alias gdefault="git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
 alias gst="git status"
 alias gd="git diff"
 alias gcam="git commit -a -m" # TODO(sgringwe): Add -S signs the commit using keychain
