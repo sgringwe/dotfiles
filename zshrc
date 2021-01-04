@@ -44,3 +44,5 @@ source <(kubectl completion zsh)
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+export SPACESHIP_PROMPT_ORDER=(user host dir git node ruby golang exec_time line_sep jobs exit_code char)
