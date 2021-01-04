@@ -35,8 +35,12 @@ export GOPATH=$(go env GOPATH)
 export PATH=/Users/scott/google-cloud-sdk/bin:$PATH
 
 # set up kubectl autocomplete
+# 1. pre-req https://unix.stackexchange.com/questions/339954/zsh-command-not-found-compinstall-compinit-compdef
+autoload -Uz compinit
+compinit
+# 2
 source <(kubectl completion zsh) 
 
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
