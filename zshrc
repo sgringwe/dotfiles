@@ -32,7 +32,7 @@ export GOPATH=$(go env GOPATH)
 # fi
 
 # Add gcloud to the PATH
-export PATH=/Users/scott/google-cloud-sdk/bin:$PATH
+export PATH=/Users/$(whoami)/google-cloud-sdk/bin:$PATH
 
 # set up kubectl autocomplete
 # 1. pre-req https://unix.stackexchange.com/questions/339954/zsh-command-not-found-compinstall-compinit-compdef
@@ -49,3 +49,6 @@ promptinit
 prompt spaceship
 
 export SPACESHIP_PROMPT_ORDER=(user host dir git node ruby golang exec_time line_sep jobs exit_code char)
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc'; fi
