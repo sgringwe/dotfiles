@@ -8,6 +8,8 @@ supported at this time).
 
 ## Using
 
+Make sure homebrew is installed and `brew` command can run.
+
 Clone repository into ~/.dotfiles. Location is important - the script depends on it.
 
 Run `./setup.sh`
