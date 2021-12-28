@@ -15,8 +15,8 @@ export PATH=~/.local/bin:$PATH
 eval "$(rbenv init - --no-rehash zsh)"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Golang https://golang.org/doc/code.html#GOPATH
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -42,7 +42,10 @@ compinit
 source <(kubectl completion zsh) 
 
 # Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
+fpath=( "$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath ) # Needed on M1 mac https://github.com/spaceship-prompt/spaceship-prompt/issues/1057
+setopt prompt_subst
+autoload -U promptinit
+promptinit
 prompt spaceship
 
 export SPACESHIP_PROMPT_ORDER=(user host dir git node ruby golang exec_time line_sep jobs exit_code char)

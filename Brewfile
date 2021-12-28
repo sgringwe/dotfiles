@@ -8,16 +8,12 @@ brew 'rcm'
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code'
 
-# You can't escape the need for java
-cask 'java'
-
 # Spectacle is used to re-arrange windows easily using key bindings
-tap 'caskroom/cask'
 cask 'spectacle'
+
+# Terminal prompt
+brew "spaceship"
 
 # Ruby 
 brew 'rbenv'
 brew 'ruby-build'
-
-# Node
-brew 'nvm'
