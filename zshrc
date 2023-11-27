@@ -48,7 +48,8 @@ autoload -U promptinit
 promptinit
 prompt spaceship
 
-export SPACESHIP_PROMPT_ORDER=(user host dir git node ruby golang exec_time line_sep jobs exit_code char)
+# Removed 'git' because it added a ~0.5s lag. 'ruby' and 'node' added a slight lag too, but not as much.
+export SPACESHIP_PROMPT_ORDER=(user host dir golang exec_time line_sep jobs exit_code char)
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc'; fi

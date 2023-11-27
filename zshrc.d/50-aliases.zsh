@@ -39,3 +39,6 @@ alias k="kubectl"
 alias s="seira"
 
 alias devup="ssh -t scott@localhost -p 2222 \"cd ~/handshake ; bash\""
+
+alias startrails="foreman start --formation=web=1"
+alias startfrontend="foreman start --formation=webpack=1"
