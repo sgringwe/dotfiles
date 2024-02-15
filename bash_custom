@@ -1,3 +1,4 @@
 export DOTFILES="$HOME/.dotfiles"
 export PATH="/usr/local/bin:$DOTFILES/bin:$HOME/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin

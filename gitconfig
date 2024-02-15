@@ -41,3 +41,7 @@
 [diff]
 	guitool = kdiff3
 	tool = kdiff3
+
+# For Handshake golang private artifacts
+[url "ssh://git@github.com/"]
+        insteadOf = https://github.com/
