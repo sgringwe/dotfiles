@@ -36,10 +36,10 @@ export PATH=/Users/$(whoami)/google-cloud-sdk/bin:$PATH
 
 # set up kubectl autocomplete
 # 1. pre-req https://unix.stackexchange.com/questions/339954/zsh-command-not-found-compinstall-compinit-compdef
-autoload -Uz compinit
-compinit
-# 2
-source <(kubectl completion zsh) 
+# autoload -Uz compinit
+# compinit
+# # 2
+# source <(kubectl completion zsh) 
 
 # Set Spaceship ZSH as a prompt
 fpath=( "$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath ) # Needed on M1 mac https://github.com/spaceship-prompt/spaceship-prompt/issues/1057
