@@ -21,3 +21,5 @@ else # OS X
   config_link zshrc
   config_link zlogin
 fi
+
+config_link tmux.conf
