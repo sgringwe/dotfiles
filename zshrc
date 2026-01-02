@@ -64,3 +64,8 @@ export SPACESHIP_PROMPT_ORDER=(user host dir golang exec_time line_sep jobs exit
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/$(whoami)/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Fix an issue with Puma forking in M3
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

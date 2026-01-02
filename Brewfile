@@ -5,7 +5,7 @@ brew 'rcm'
 # A font to be used by iTerm in order to support
 # GIT_SYMBOL in spaceship-prompt
 # https://github.com/denysdovhan/spaceship-prompt/issues/179
-tap 'homebrew/cask-fonts'
+# tap 'homebrew/cask-fonts' # No longer a valid cask
 cask 'font-fira-code'
 
 # Spectacle is used to re-arrange windows easily using key bindings
