@@ -61,7 +61,7 @@ fpath=( "$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath ) # Needed on M1 mac 
 setopt prompt_subst
 autoload -U promptinit
 promptinit
-prompt spaceship
+# prompt spaceship # Seems unnecessary and shows a lot of output we don't want during terminal bootup
 
 # Removed 'git' because it added a ~0.5s lag. 'ruby' and 'node' added a slight lag too, but not as much.
 export SPACESHIP_PROMPT_ORDER=(user host dir golang exec_time line_sep jobs exit_code char)
